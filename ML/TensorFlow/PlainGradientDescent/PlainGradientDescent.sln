@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PlainGradientDescent", "PlainGradientDescent\PlainGradientDescent.pyproj", "{1B4F5453-976C-4113-A6ED-13BBE8C79A12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B4F5453-976C-4113-A6ED-13BBE8C79A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4F5453-976C-4113-A6ED-13BBE8C79A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B2C10C2-15CB-46F3-BBD9-B03741BC3764}
+	EndGlobalSection
+EndGlobal

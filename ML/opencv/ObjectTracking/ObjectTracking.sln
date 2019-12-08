@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ObjectTracking", "ObjectTracking\ObjectTracking.pyproj", "{C07EDCB6-2FBC-46FC-8507-C162BC8C0732}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C07EDCB6-2FBC-46FC-8507-C162BC8C0732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07EDCB6-2FBC-46FC-8507-C162BC8C0732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {942667A1-587D-46ED-9D95-A82859751120}
+	EndGlobalSection
+EndGlobal

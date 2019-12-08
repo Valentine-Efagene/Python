@@ -1,0 +1,2 @@
+Copy the script to desktop before use, and save the archive to desktop
+Had issues extracting an empty text file alone in the archived

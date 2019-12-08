@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Ch4TensorflowMLPSklearnHelp", "Ch4TensorflowMLPSklearnHelp\Ch4TensorflowMLPSklearnHelp.pyproj", "{CCB890A8-7876-4847-9BF8-27887F52DC9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCB890A8-7876-4847-9BF8-27887F52DC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB890A8-7876-4847-9BF8-27887F52DC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E658BC0-39CA-487C-9D47-7FDFBF49753A}
+	EndGlobalSection
+EndGlobal

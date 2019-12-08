@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Keras_CNN_Printed_Digits", "Keras_CNN_Printed_Digits\Keras_CNN_Printed_Digits.pyproj", "{BCCFD4CD-EFDA-44A9-8A7C-37EC4E6DA65F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCCFD4CD-EFDA-44A9-8A7C-37EC4E6DA65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCCFD4CD-EFDA-44A9-8A7C-37EC4E6DA65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AD30931-0EE8-4616-9861-6EF6368C3179}
+	EndGlobalSection
+EndGlobal

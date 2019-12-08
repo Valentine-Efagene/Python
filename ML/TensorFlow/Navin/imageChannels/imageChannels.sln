@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "imageChannels", "imageChannels\imageChannels.pyproj", "{8BDB38D9-8329-4271-98AC-BBEDB561E3E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BDB38D9-8329-4271-98AC-BBEDB561E3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDB38D9-8329-4271-98AC-BBEDB561E3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {864AF82A-B6B1-4181-AF06-F2C41170F596}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GANS keras Ivan Vasilev", "GANS keras Ivan Vasilev\GANS keras Ivan Vasilev.pyproj", "{1E99C2E6-7071-4B29-8DAF-9FD3FB016614}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E99C2E6-7071-4B29-8DAF-9FD3FB016614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E99C2E6-7071-4B29-8DAF-9FD3FB016614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA6A4D80-CF5D-4F0A-867F-06A9C97ED617}
+	EndGlobalSection
+EndGlobal

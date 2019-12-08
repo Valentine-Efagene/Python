@@ -1,0 +1,86 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a4bfff72-503c-46ae-a92e-90cdf8044d77</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>GANS_From_Github.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>GANS_From_Github</Name>
+    <RootNamespace>GANS_From_Github</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="examples\cifar10_utils.py" />
+    <Compile Include="examples\example_aae.py" />
+    <Compile Include="examples\example_aae_cifar10.py" />
+    <Compile Include="examples\example_bigan.py" />
+    <Compile Include="examples\example_bigan_unrolled.py" />
+    <Compile Include="examples\example_gan.py" />
+    <Compile Include="examples\example_gan_cifar10.py" />
+    <Compile Include="examples\example_gan_convolutional.py" />
+    <Compile Include="examples\example_gan_unrolled.py" />
+    <Compile Include="examples\example_gan_unrolled_hinge.py" />
+    <Compile Include="examples\example_rock_paper_scissors.py" />
+    <Compile Include="examples\image_utils.py" />
+    <Compile Include="examples\mnist_utils.py" />
+    <Compile Include="GANS_From_Github.py" />
+    <Compile Include="image_utils.py" />
+    <Compile Include="keras_adversarial\adversarial_model.py" />
+    <Compile Include="keras_adversarial\adversarial_optimizers.py" />
+    <Compile Include="keras_adversarial\adversarial_utils.py" />
+    <Compile Include="keras_adversarial\backend\tensorflow_backend.py" />
+    <Compile Include="keras_adversarial\backend\tensorflow_monkeypatch.py" />
+    <Compile Include="keras_adversarial\backend\theano_backend.py" />
+    <Compile Include="keras_adversarial\backend\__init__.py" />
+    <Compile Include="keras_adversarial\image_grid.py" />
+    <Compile Include="keras_adversarial\image_grid_callback.py" />
+    <Compile Include="keras_adversarial\legacy.py" />
+    <Compile Include="keras_adversarial\unrolled_optimizer.py" />
+    <Compile Include="keras_adversarial\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\" />
+    <Folder Include="doc\" />
+    <Folder Include="doc\images\" />
+    <Folder Include="examples\" />
+    <Folder Include="keras_adversarial.egg-info\" />
+    <Folder Include="keras_adversarial\" />
+    <Folder Include="keras_adversarial\backend\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\keras_adversarial-0.0.3-py3.6.egg" />
+    <Content Include="doc\images\aae-epoch-099.png" />
+    <Content Include="doc\images\bigan-epoch-000.png" />
+    <Content Include="doc\images\bigan-epoch-099.png" />
+    <Content Include="doc\images\gan-cifar10-epoch-000.png" />
+    <Content Include="doc\images\gan-cifar10-epoch-099.png" />
+    <Content Include="doc\images\gan-epoch-000.png" />
+    <Content Include="doc\images\gan-epoch-099.png" />
+    <Content Include="keras_adversarial.egg-info\dependency_links.txt" />
+    <Content Include="keras_adversarial.egg-info\PKG-INFO" />
+    <Content Include="keras_adversarial.egg-info\requires.txt" />
+    <Content Include="keras_adversarial.egg-info\SOURCES.txt" />
+    <Content Include="keras_adversarial.egg-info\top_level.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
