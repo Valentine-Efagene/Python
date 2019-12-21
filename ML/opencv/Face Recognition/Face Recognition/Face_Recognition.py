@@ -55,7 +55,7 @@ faces, labels = prepare_training_data(data_folder_path)
 face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.train(faces, np.array(labels))
 
-subjects = ["Philip", "Valentyne", "great", "Chidinma"]
+subjects = ["PHILIP", "VALENTINE", "GREAT", "CHIDINMA"]
 img = cv2.imread("data/images/test/test2.jpg")
 img = cv2.resize(img, (960, 540))  
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

@@ -1,1 +1,0 @@
-As of 8:00 AM, Thursday, June 2019, the feature extractor can separate capital letters in font calibri 12. I did not test smaller fonts. The problem with any character with a dot is that the dot gets treated as a separate character.

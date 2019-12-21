@@ -1,21 +1,8 @@
-import itertools
-import subprocess
+import numpy as np
 
-template = "abcdefghijklmnopqrstuvwxyz1234567890#$_+-?\'\"\/ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-print("Running...")
+import pandas as pd
+df_data = pd.read_excel("mtn_monthly.xlsx")
+data = df_data.values
+x_train = np.ravel(data.T[0])
 
-for charLength in range(1, 10):
-    passwords = itertools.product(template, repeat=charLength)
-
-    for i in passwords:
-        password = ''.join(i)
-        print(password)
-        password = "-p" + password
-        error = subprocess.call( ['unrar', 'x', password, 'C:\\Users\\valentyne\\Desktop\\test.rar'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL )
-
-        if (error == 0):
-            print('password = ', ''.join(i))
-            exit(0)
-        else:
-            os.rmdir("C:\\Users\\valentyne\\Desktop\\test") # If folder
-            continue
+print(x_train)
