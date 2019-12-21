@@ -2,6 +2,7 @@ import cv2
 import random
 import numpy as np
 from imageToArrayConverter import ImageToArrayConverter
+from DisplayResult import DisplayResult
 from keras.preprocessing.image import ImageDataGenerator
 from keras.utils import to_categorical
 import tensorflow as tf
@@ -123,7 +124,10 @@ if (not path.exists('model.h5')):
 else:
     model = load_model('model.h5')
 
-itacTest = ImageToArrayConverter('try.png')
+
+src = 'printedDigitsTrain.png'
+#itacTest = ImageToArrayConverter('try.png')
+itacTest = ImageToArrayConverter(src)
 
 x_test = itacTest.getImageAsArray()
 
@@ -142,9 +146,19 @@ x_test /= 255
 image_index = 1
 img_rows = 28
 img_cols = 28
-cv2.imshow('f', x_test[image_index].reshape(28, 28))
-pred = model.predict(x_test[image_index].reshape(1, img_rows, img_cols, 1))
-print(pred.argmax())
+#cv2.imshow('f', x_test[image_index].reshape(28, 28))
+#pred = model.predict(x_test[image_index].reshape(1, img_rows, img_cols, 1))
+#print(pred.argmax())
 #plt.show()
+vals = []
+
+for i in range(len(x_test)):
+    pred = model.predict(x_test[i].reshape(1, img_rows, img_cols, 1))
+    vals.append(pred.argmax())
+
+#cv2.imshow('dhs', x_test[0])
+cv2.imshow('dhs', DisplayResult(src, vals).getContourImage())
+cv2.waitKey(0)
+exit(0)
 
 pause()
