@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from random import randint
 
 class ImageToArrayConverter(object):
     """description of class"""
@@ -33,6 +34,7 @@ class ImageToArrayConverter(object):
                 if not a == b:
                     rectangles.append(r)
      
+        self.rectangles = rectangles
         self.threshHoldedImage = thbw
         self.contourImage = img
         self.numberOfDigits = len(rectangles)
@@ -46,6 +48,28 @@ class ImageToArrayConverter(object):
             res = cv2.resize(roi, (28, 28))
             self.x_vals_test[i] = res.ravel()
             i += 1
+
+    def displayResult(self, vals):
+        i = 0
+        font = cv2.FONT_HERSHEY_SIMPLEX 
+        fontScale = 0.5
+        thickness = 1
+        b, g, r = 255, 0, 0
+        above = 5
+        result = self.contourImage
+
+        for rec in self.rectangles:
+            b = randint(0, 250)
+            g = randint(0, 250)
+            r = randint(0, 250)
+            color = (b, g, r)
+            x,y,w,h = self.wrap_digit(rec)
+            cv2.rectangle(result, (int(x),int(y)), (int(x+w), int(y+h)), color, 2)
+            result = cv2.putText(result, str(int(vals[i])), (int(x), int(y - above)), font, fontScale, color, thickness, cv2.LINE_AA) 
+            #cv2.line(self.contourImage, (int(x), int(y - 20)), (int(x), int(y - 10)), color, thickness)
+            i += 1
+
+        return result
 
     def inside(self, r1, r2):
         x1,y1,w1,h1 = r1

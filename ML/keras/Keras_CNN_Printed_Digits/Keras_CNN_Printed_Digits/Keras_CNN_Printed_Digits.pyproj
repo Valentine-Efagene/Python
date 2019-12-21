@@ -21,9 +21,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DisplayResult.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="imageToArrayConverter.py" />
     <Compile Include="Keras_CNN_Printed_Digits.py" />
   </ItemGroup>

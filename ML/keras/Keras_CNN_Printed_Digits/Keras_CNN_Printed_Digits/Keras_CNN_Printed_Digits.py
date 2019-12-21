@@ -2,7 +2,6 @@ import cv2
 import random
 import numpy as np
 from imageToArrayConverter import ImageToArrayConverter
-from DisplayResult import DisplayResult
 from keras.preprocessing.image import ImageDataGenerator
 from keras.utils import to_categorical
 import tensorflow as tf
@@ -157,7 +156,7 @@ for i in range(len(x_test)):
     vals.append(pred.argmax())
 
 #cv2.imshow('dhs', x_test[0])
-cv2.imshow('dhs', DisplayResult(src, vals).getContourImage())
+cv2.imshow('dhs', itacTest.displayResult(vals))
 cv2.waitKey(0)
 exit(0)
 
